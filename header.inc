@@ -25,7 +25,7 @@ Version 0.0.1 (Initial Release)
 $loggedin = true;
 // END - DEBUG ONLY
 
-if ((!$loggedin) && ((basename($_SERVER['SCRIPT_FILENAME'], '.php') != "login"))) {
+if ((!$loggedin) && ((basename($_SERVER['SCRIPT_FILENAME'], '.php') != ("login" | "register"))) ) {
 	header('Location: login.php');
 }
 // echo basename($_SERVER["SCRIPT_FILENAME"], '.php');
@@ -37,7 +37,7 @@ if ((!$loggedin) && ((basename($_SERVER['SCRIPT_FILENAME'], '.php') != "login"))
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	</head>
 	<body>
-		<header>Time Tracking</header>
+		<header>Zeitgrab Time Tracker</header>
 		
 		<nav> <!-- Navigation bar - Left side -->
 			<ul>
